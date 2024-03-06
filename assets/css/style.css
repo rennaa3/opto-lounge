@@ -3,3 +3,24 @@
 header {
     margin: 0;
 }
+
+.container {
+    position: fixed;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------------------------- Footer */
+
+.social-media {
+    list-style-type: none;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
