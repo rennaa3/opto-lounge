@@ -3,6 +3,44 @@
 header {
     
     margin: 0;
+    width: 250px;
+   
+   
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    
+}
+
+.list-inline-item {
+
+    padding-right: 0%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.contact-form {
+
+    position: absolute;
+    right: 75px;
+    top: 100px; 
+}
+
+.message-box {
+
+    height: 150px;
+}
+
+#map {
+    position:fixed;
+    bottom: 100px;
+    right: 10px;
+
 }
 
 
@@ -11,21 +49,27 @@ header {
 
 .social-media {
     list-style-type: none;
-   
+    font-size: 20px;
 }
 
 li {
-    display: inline-block;
-    
+    display: inline-block; 
 }
 
 
+footer p {
+    color: grey;
+    padding-bottom: 0%;
+    font-size: 12px;
+}
+
 
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
+    min-height: 100px;
     text-align: center;
     background-color: black;
     
