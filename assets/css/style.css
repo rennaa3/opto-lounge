@@ -1,22 +1,112 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Inter:100,200,300,400,500,600,700,800,900');
-
-header {
-    
+*{
+    padding: 0;
     margin: 0;
-    width: 250px;
-   
-   
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
-body {
+:root{
+    --bg-color: #1f1f21;
+    --text-color: #090C02;
+    --black-color: #090C02;
+    --main-color: #041d8a;
+    /* --main-color: #ff004f; */
+    --lightgrey-color: #c3c3c3;
+
+    --big-font: 5rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
     font-family: "Inter", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background: #fff;
+    transition: all ease .45s;
+}
+
+header img{
+    color: white;
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.navbar .flex-item {
     
+    margin-left: auto; /* Push items to the left */
+}
+.navbar li{
+    text-decoration: none; /* Remove underline */
+}
+.navbar a{
+    font-size: var(--p-font);
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar a.active{
+    color: var(--main-color);
+}
+
+
+/* CSS for dropdown menu */
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute; /* Position dropdown menu absolutely */
+    background-color: #fff; /* Background color for the dropdown menu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    z-index: 1; /* Set z-index to ensure it appears above other elements */
+}
+
+.dropdown-menu ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+
+.dropdown-menu ul li {
+    padding: 10px; /* Add padding for each dropdown item */
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set text color */
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
 }
 
 .list-inline-item {
 
     padding-right: 0%;
 }
+
+
 
 img {
     max-width: 100%;
