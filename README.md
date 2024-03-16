@@ -74,7 +74,7 @@ Framework, Libraries and Programs used:
 3. [Font Awesome](https://fontawesome.com/)
 * Font Awesome was used throughout the website to add icons for UX purposes in making it more interactive for the user.
 
-4. Codeanywhere](https://app.codeanywhere.com/)
+4. [Codeanywhere](https://app.codeanywhere.com/)
 
 *Codeanywhere was used for version control, I was able to commit in the terminal and push to Github.
 
