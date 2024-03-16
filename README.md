@@ -36,7 +36,7 @@ The main colours used are
 
 * Typography:
 
-The main font used throughout the website is ………. with ………..  serving as a reliable backup should any font importation challenges arise. ….  matched well with theme of my website
+The main font used throughout the website is Inter and Rubik with san serif serving as a reliable backup should any font importation challenges arise. Inter matched well with the theme of my website.
 
 * Imagery
 
