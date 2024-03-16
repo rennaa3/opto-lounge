@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Inter:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700,800,900|Inter:100,200,300,400,500,600,700,800,900');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
 :root{
-    --bg-color: #1f1f21;
+    --bg-color: #ffffff;
     --text-color: #090C02;
     --black-color: #090C02;
     --main-color: #041d8a;
@@ -20,15 +20,20 @@
     --p-font: 1.1rem;
 }
 
-body{
+
+
+body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
 }
 
-header{
+
+
+header {
     position: fixed;
+    background-image: url(assets/images/hairsalon.jpeg);
     top: 0;
     right: 0;
     width: 100%;
@@ -41,15 +46,29 @@ header{
     transition: all ease .45s;
 }
 
+
 header img{
     color: white;
     height: 70px;
 }
 
+
+
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span {
+    color: #ff7300;
+}
 .navbar {
     display: flex;
     width: 50%;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; 
 }
 
 .navbar .flex-item {
@@ -74,40 +93,32 @@ header img{
 }
 
 
-/* CSS for dropdown menu */
+
+.navbar li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .dropdown-menu {
-    display: none; /* Hide the dropdown menu by default */
-    position: absolute; /* Position dropdown menu absolutely */
-    background-color: #fff; /* Background color for the dropdown menu */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
-    z-index: 1; /* Set z-index to ensure it appears above other elements */
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
 }
 
-.dropdown-menu ul {
-    list-style-type: none; /* Remove default list style */
-    padding: 0; /* Remove padding */
+.dropdown-menu li {
+    padding: 10px;
 }
 
-.dropdown-menu ul li {
-    padding: 10px; /* Add padding for each dropdown item */
+.dropdown-menu li:hover {
+    background-color: #f0f0f0; 
 }
 
-.dropdown-menu ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set text color */
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333; 
+
 }
-
-.dropdown-menu ul li a:hover {
-    background-color: #f0f0f0; /* Background color on hover */
-}
-
-.list-inline-item {
-
-    padding-right: 0%;
-}
-
-
-
 img {
     max-width: 100%;
     height: auto;
@@ -115,7 +126,6 @@ img {
 }
 
 .contact-form {
-
     position: absolute;
     right: 75px;
     top: 100px; 
@@ -123,14 +133,107 @@ img {
 
 .message-box {
 
-    height: 150px;
+    height: 100px;
 }
 
-#map {
-    position:fixed;
-    bottom: 100px;
-    right: 10px;
+/*-------------Price List Table -----------*/
+.table {
+    text-align: center;
+}
 
+.price-list-subheading, .disclaimer {
+    position: relative;
+    left: 50px;
+}
+
+.note {
+    left: 25px;
+    position: relative;
+
+}
+
+.list-group-item {
+
+    border: none;
+}
+
+/*-------------Price List Table -----------*/
+
+/*-------------Gallery-----------*/
+
+.gallery-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image1 {
+    margin: 10px;
+}
+
+.image img1 {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/*-------------Testimonials-----------*/
+
+
+.work1 img{
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    transition: transform 0.5s;
+    margin: 0 auto;
+
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+
+#Testimonials{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+
+.work:hover img{
+    transform: scale(1.1);
 }
 
 
@@ -164,3 +267,135 @@ footer {
     background-color: black;
     
   }
+
+  /*---------------newsletter---------------*/
+  .newsletter1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; 
+    padding: 20px;
+}
+
+.container {
+    margin-bottom: 10px;
+}
+
+.sign-up-item {
+    width: 100%;
+}
+
+h5 {
+    margin: 0;
+    font-size: 20px; 
+    color: #333; 
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+  /*---------------contact me---------------*/
+
+  .contact {
+    background-color: #f9f9f9; 
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.row {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.contact-left {
+    width: 45%; 
+}
+
+.contact-right {
+    width: 45%; 
+}
+
+.sub-title {
+    margin-top: 0; 
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-left p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #333;
+}
+
+.contact-right input[type="text"],
+.contact-right input[type="email"],
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-right textarea {
+    height: 150px;
+    width: 65vh;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+.btn {
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
