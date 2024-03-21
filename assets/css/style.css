@@ -366,7 +366,7 @@ input[type="submit"] {
 
 .contact-right textarea {
     height: 150px;
-    width: 65vh;
+    width: 100%;
 }
 
 .form-container {
