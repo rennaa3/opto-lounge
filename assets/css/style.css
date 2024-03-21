@@ -147,7 +147,7 @@ img {
 }
 
 .note {
-    left: 25px;
+    padding-left: 50px;
     position: relative;
 
 }
@@ -155,6 +155,7 @@ img {
 .list-group-item {
 
     border: none;
+    padding-left: 60px;
 }
 
 /*-------------Price List Table -----------*/
