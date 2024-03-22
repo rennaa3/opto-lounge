@@ -1,6 +1,6 @@
 # Opto Salon Website
 
-You can find the live project here. [view]()
+You can find the live project here. [view](https://rennaa3.github.io/opto-salon/)
 
 This website serves as the primary marketing platform for Opto Salon. It is crafted to ensure responsiveness and accessibility across various devices, facilitating smooth navigation for prospective customers and business partners.
 
