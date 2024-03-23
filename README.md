@@ -98,6 +98,10 @@ Framework, Libraries and Programs used:
 
 * Lucid was used to create the wireframes for the pages on my website and the mock-ups.
 
+10. [Boxicon](https://boxicons.com/)
+* Boxicon was used throughout the website to add icons for UX purposes in making it more interactive for the user.
+
+
 ## Testing:
 
 The W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -139,9 +143,13 @@ The W3C CSS Validator Services were used to validate every page of the project t
 
 ## Known Bugs or Issues:
 
-*I had an issue with creating an unordered or ordered list on my Price List Page. I was unable to find the issue causing it so I used Bootstrap list to help me.
+* I had an issue with creating an unordered or ordered list on my Price List Page. I was unable to find the issue causing it so I used Bootstrap list to help me.
 
 * Slow loading of my pictures - reduced the size as much without corrupting the quality.
+
+* Nav bar overlapping pictures in header
+
+* Making the navbar suitable for small screen devices
 
 ## Deployment:
 
@@ -166,16 +174,18 @@ The steps needed to deploy the project to GitHub Pages:
 
 ## Content:
 
-* Content was written by me.
+* Content was written by me. I had some help from a family friend in assisting and reviewing Javascript and media queries.
 
 ## Media:
 
 * Images were sourced from Adobe Stock and Freepik.
-* A personal image of my hair was included.
 * The logo was sourced using a template from Canvas.
 
 ## Acknowledgements
 
 * My tutor at Code Institute, Ebad, for his encouraging support and flexibility.
+
+
+
 
 
